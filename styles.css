@@ -1,0 +1,139 @@
+:root{
+  --color-black: #000000;
+  --bg-color: #FFF8EB;
+  --brown-bg: #FFD4A2;
+  --blue-bg: #AEDAFA;
+  --purple-bg: #928EEB;
+  --green-bg: #8EE1AF;
+  --lighter-green-bg: #C4FCDA;
+
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+  padding: 0; 
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+body{
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;;
+
+  & > h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+main{
+  width: 100%;
+  padding: 2.5rem 5rem;
+}
+
+.main-section{
+  
+
+  & > div:first-child {
+    background-color: var(--brown-bg);
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > img{
+      width: auto;
+      height: auto;
+    }
+
+    & > h3{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    & > h4{
+      font-size: .85rem;
+      font-weight: 300;
+    }
+  }
+
+  & > div:nth-child(2){
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & > div:first-child{
+      background: var(--blue-bg);
+    }
+
+    & > div:last-child{
+      background-color: var(--purple-bg);
+    }
+  }
+}
+
+.sub-section{
+  width: 100%;
+  margin-top: 4rem;
+
+  & > h4{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  & > div{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & > a{
+      background-color: var(--green-bg);
+      transition: all 0.3s ease, transform 0.3s ease;
+    }
+
+    & > a:hover{
+      background-color: var(--lighter-green-bg);
+      box-shadow: 0px 0px 0 var(--color-black);
+      transform: scale(0.95);
+    }
+  }
+}
+
+.goals-section{
+  
+}
+
+.container{
+  padding: 1rem;
+  border: 1px solid var(--color-black);
+  box-shadow: 5px 5px 0 var(--color-black);
+}
