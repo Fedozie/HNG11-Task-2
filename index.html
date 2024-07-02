@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HNG Stage 1 Task</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -18,11 +21,11 @@
         <h4 data-testid="slackEmail">phynnedo@gmail.com</h4>
       </div>
       <div>
-        <div class="container" data-testid="currentDay">
-          Day of the Week:
-        </div>
         <div class="container" data-testid="currentTimeUTC">
-          UTC Time: 
+         Current Time in UTC: <span id="utcTime"></span>
+        </div>
+        <div class="container" data-testid="currentDay">
+          Current Day of the Week: <span id = "weekday"></span>
         </div>
       </div>
     </section>
@@ -36,10 +39,20 @@
       </div>
     </section>
 
-    <section class="goal-section">
-      <h4>Goals</h4>
+    <section class="goals-section">
+      <h4>Goals for the next two years</h4>
+      <div>
+        <div class="container">Become very good at ReactJS and NextJS</div>
+        <div class="container">Learn to build mobile apps with React Native and pick up skills on building with VueJS</div>
+        <div class="container">Contribute to open source</div>
+        <div class="container">Build more scalable web applications, both personally or with a team</div>
+        <div class="container">Improve my communication, teamwork, and project management skills.
+        </div>
+        <div class="container">Give talks at more events.</div>
+        <div class="container">Have a well-paying frontend role in a reputable company.</div>
+      </div>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
