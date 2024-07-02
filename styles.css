@@ -55,49 +55,47 @@ main{
   padding: 2.5rem 5rem;
 }
 
-.main-section{
+.main-section > div:first-child{
+  background-color: var(--brown-bg);
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  & > div:first-child {
-    background-color: var(--brown-bg);
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    & > img{
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-
-    & > h3{
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-top: 1.5rem;
-    }
-
-    & > h4{
-      font-size: .85rem;
-      font-weight: 300;
-    }
+  & > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
-  & > div:nth-child(2){
-    width: 100%;
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  & > h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
 
-    & > div:first-child{
-      background-color: var(--blue-bg);
-    }
 
-    & > div:last-child{
-      background-color: var(--purple-bg);
-    }
+  & > h4{
+    font-size: .85rem;
+    font-weight: 300;
+  }
+}
+
+.main-section > div:nth-child(2){
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  & > div:first-child{
+    background-color: var(--blue-bg);
+  }
+
+  & > div:last-child{
+    background-color: var(--purple-bg);
   }
 }
 
@@ -110,28 +108,28 @@ main{
     font-size: 1.5rem;
     font-weight: 600;
   }
+}
 
-  & > div{
-    width: 100%;
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.sub-section > div{
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-    & > a{
-      text-align: center;
-      background-color: var(--green-bg);
-      transition: all 0.3s ease, transform 0.3s ease;
-    }
+  & > a{
+    text-align: center;
+    background-color: var(--green-bg);
+    transition: all 0.3s ease, transform 0.3s ease;
+  }
 
-    & > a:hover{
-      background-color: var(--lighter-green-bg);
-      box-shadow: 0px 0px 0 var(--color-black);
-      transform: scale(0.95);
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
+  & > a:hover{
+    background-color: var(--lighter-green-bg);
+    box-shadow: 0px 0px 0 var(--color-black);
+    transform: scale(0.95);
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }
 
@@ -143,15 +141,15 @@ main{
     font-weight: 600;
     margin-bottom: 1rem;
   }
+}
+
+.goals-section > div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 
   & > div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-
-    & > div{
-      background-color: var(--peach-bg);
-    }
+    background-color: var(--peach-bg);
   }
 }
 
@@ -164,42 +162,30 @@ main{
 /*MEDIA QUERIES*/
 @media (max-width: 576px){
 
-  .sub-section {
-
-    & > div{
-      flex-direction: column;
-    }
+  .sub-section > div{
+    flex-direction: column;
   }
 
-  .goals-section{
-
-    & > div{
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .goals-section > div{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 450px){
-  .main-section{
+  .main-section > div:nth-child(2){
+    flex-direction: column;
 
-    & > div:nth-child(2){
-      flex-direction: column;
+    & > div:first-child{
+      width: inherit;
+    }
 
-      & > div:first-child{
-        width: inherit;
-      }
-
-      & > div:last-child{
-        width: inherit;
-      }
+    & > div:last-child{
+      width: inherit;
     }
   }
 
-  .goals-section{
-
-    & > div{
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .goals-section  > div{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
