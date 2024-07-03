@@ -38,21 +38,23 @@ Each required element on the website (Slack name, slack profile picture, links) 
 - Add a link to scrapeanyweb.site
   - Attribute: data-testid="scrapeanywebLink"
 
-Acceptance Criteria:
-* 		Content: The website should clearly outline your tech goals for the next 2 years.
-* 		Visuals: The website should be visually appealing and well-organized.
-* 		Functionality:All links should function properly and direct users to the specified websites (hng.tech/learn, keyword.dog, scrapeanyweb.site).
-* 		The website should be fully responsive and adjust to different screen sizes.
-* 		Code Quality:The code should be well-structured, indented, and easy to read.
-* 		Each required element should have a unique data-testid attribute assigned.
-* 		Accuracy:Your Slack name should correspond to the actual data.
-* 		Your slack profile picture dimension must be in its original size (Make sure the image have natural dimensions).
-* 		Data-attributes adherence: Every specified detail on the page should correctly have the data-testid attribute as indicated above, ensuring easy identification during any potential testing.
-Submission Mode:
-Submit your task through the designated Submission form  . Ensure you've:
-* 		Hosted the page on a platform of your choice (e.g., Vercel, GitHub Pages, Netlify).
-* 		Double-checked all requirements and acceptance criteria.
-* 		Provided the hosted page's URL in the submission form.
-* 		Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.
-Submission Deadline:
-The deadline for submissions is Wednesday 3rd, July, at <11:59 PM GMT>. Late submissions will not be entertained!!
+### Acceptance Criteria:
+- Content: The website should clearly outline your tech goals for the next 2 years.
+- Visuals: The website should be visually appealing and well-organized.
+- Functionality:All links should function properly and direct users to the specified websites (hng.tech/learn, keyword.dog, scrapeanyweb.site).
+- The website should be fully responsive and adjust to different screen sizes.
+- Code Quality:The code should be well-structured, indented, and easy to read.
+- Each required element should have a unique data-testid attribute assigned.
+- Accuracy:Your Slack name should correspond to the actual data.
+- Your slack profile picture dimension must be in its original size (Make sure the image have natural dimensions).
+- Data-attributes adherence: Every specified detail on the page should correctly have the data-testid attribute as indicated above, ensuring easy identification during any potential testing.
+  
+### Submission Mode:
+Submit your task through the designated Submission form. Ensure you've:
+- Hosted the page on a platform of your choice (e.g., Vercel, GitHub Pages, Netlify).
+- Double-checked all requirements and acceptance criteria.
+- Provided the hosted page's URL in the submission form.
+- Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.
+ 
+### Submission Deadline:
+The deadline for submissions is Wednesday 3rd, July, at 11:59 PM GMT. Late submissions will not be entertained!!
